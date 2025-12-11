@@ -6,7 +6,7 @@ Autor: **Miguel Ángel Cleves Bolívar**
 
 ## Descripción del Proyecto
 
-Este repositorio contiene el **planteamiento técnico completo** de una estación ambiental interior basada en la tarjeta **LicheeRV Nano**, enfocada en la medición de variables de calidad del aire en espacios cerrados.
+Este repositorio contiene el **planteamiento técnico** de una estación ambiental interior basada en la tarjeta **LicheeRV Nano**, enfocada en la medición de variables de calidad del aire en espacios cerrados.
 
 El proyecto propone la integración de los siguientes sensores:
 
