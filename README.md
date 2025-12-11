@@ -20,6 +20,13 @@ El proyecto propone la integración de los siguientes sensores:
 La documentación incluida corresponde a la **Entrega 1** del modelo CDIO (Concebir y Diseñar).
 
 ---
+## Situación actual.
+
+En espacios interiores como hogares, oficinas y aulas, la calidad del aire suele deteriorarse sin que las personas lo noten. Concentraciones elevadas de CO₂, humedad inadecuada o acumulación de polvo afectan la atención, el bienestar y la salud.
+
+A pesar de su importancia, la mayoría de lugares no cuentan con sistemas de monitoreo continuo, y los dispositivos comerciales disponibles son costosos o no ofrecen acceso a los datos ni posibilidad de personalización.
+
+---
 
 ## Objetivo General
 
