@@ -59,7 +59,7 @@ Diseñar e implementar una estación ambiental interior basada en la LicheeRV Na
 
 ## Hardware
 
-###SCD41 Sensor de CO₂
+### SCD41 Sensor de CO₂
 
 El sensor SCD41 es un módulo avanzado basado en tecnología fotoacústica que permite medir concentraciones de CO₂ con alta precisión y estabilidad a largo plazo. Su diseño compacto y su integración digital mediante interfaz I²C lo convierten en una solución ideal para sistemas embebidos orientados al monitoreo ambiental. Gracias a su capacidad para entregar mediciones confiables incluso en ambientes dinámicos, el SCD41 permite evaluar la calidad del aire en interiores y detectar niveles potencialmente perjudiciales para la salud o el rendimiento humano
 
@@ -74,6 +74,14 @@ El GP2Y1010AU0F es un sensor óptico de dispersión de luz diseñado para detect
 ### ADS1115 Convertidor Análogo a Digital (ADC) de 16 bits
 
 El ADS1115 es un ADC externo de alta precisión que proporciona conversión analógica-digital de 16 bits, lo cual mejora significativamente la resolución comparado con conversores integrados de microcontroladores típicos. Su interfaz I²C y sus canales de entrada multipropósito permiten digitalizar señales provenientes de sensores como el GP2Y1010AU0F con gran detalle y estabilidad. Incorporar el ADS1115 garantiza que las mediciones del sensor de partículas sean consistentes, evitando ruidos o imprecisiones que comprometan el análisis ambiental.
+
+| Componente              | Tipo de señal | Interfaz / Comunicación | Rango de operación | Unidad de medida | Tensión de operación | Consumo eléctrico (típico) | Requerimientos de alimentación | Comentario |
+|-------------------------|---------------|--------------------------|--------------------|------------------|-----------------------|------------------------------|--------------------------------|------------|
+| **SCD41 (CO₂)**         | Digital       | I²C (100–400 kHz)        | 400 – 5000 ppm     | ppm              | 2.4 – 3.6 V (3.3 V típico) | ~150 mA máx. durante medición | Fuente estable de 3.3 V, requiere corriente suficiente por picos | Sensor fotoacústico de alta precisión; ideal para sistemas embebidos. |
+| **DHT22 (Temp/Hum)**    | Digital       | 1-wire simplificado       | -40 a 80 °C / 0–100 %HR | °C, %HR         | 3.3 – 6.0 V           | ~1.5 mA (medición) / 0.5 mA reposo | No requiere alimentación especial; tolerante a 3.3 o 5V | Sensor capacitivo con buena estabilidad. Frecuencia máx: 0.5 Hz. |
+| **GP2Y1010AU0F (PM2.5)**| Analógica     | Salida analógica          | 0 – ~500 µg/m³     | µg/m³ (estimado) | 5.0 V                 | LED: ~20–30 mA (promedio), circuito: ~11 mA | Necesita 5 V para el LED IR; requiere resistencia de carga y PWM para LED | Sensor óptico de dispersión; requiere ADC externo para lectura. |
+| **ADS1115 (ADC 16 bits)**| Digital      | I²C (hasta 860 SPS)       | 0 – 3.3 V (entrada diferencial o single-ended) | - | 2.0 – 5.5 V          | ~150 µA en operación / 0.5 µA en standby | Puede alimentarse desde 3.3 V o 5V; referencia interna estable | Conversor de alta resolución ideal para señales del GP2Y1010. |
+
 
 ---
 
