@@ -1,4 +1,4 @@
-# Estación Ambiental Interior – LicheeRV Nano  
+# Estación Ambiental Interior  
 Proyecto para la materia **Sistemas Embebidos**  
 Autor: **Miguel Ángel Cleves Bolívar**
 
@@ -21,17 +21,16 @@ La documentación incluida corresponde a la **Entrega 1** del modelo CDIO (Conce
 
 ## Objetivo General
 
-Desarrollar el diseño conceptual de una estación ambiental capaz de medir CO₂, temperatura, humedad y material particulado, empleando la tarjeta LicheeRV Nano como unidad de procesamiento.
+Diseñar e implementar una estación ambiental interior basada en la LicheeRV Nano que permita medir CO₂, temperatura, humedad y partículas en suspensión, generando datos confiables para apoyar la toma de decisiones sobre la calidad del aire.
 
 ---
 
 ## Objetivos Específicos
 
-- Identificar la problemática relacionada con la calidad del aire en interiores.  
-- Seleccionar sensores adecuados según criterios técnicos.  
-- Definir los requerimientos del sistema embebido.  
-- Diseñar la arquitectura preliminar del sistema.  
-- Analizar riesgos y establecer estrategias de mitigación.
+- Integrar los sensores a la tarjeta de desarrollo mediante interfaces digitales y un ADC externo.
+- Realizar la adquisición y procesamiento básico de las señales para obtener mediciones confiables de CO₂, temperatura, humedad y partículas.
+- Implementar un módulo o servicio que permita leer, registrar y exponer los datos.
+- Desarrollar una interfaz simple para visualizar las mediciones de calidad de aire.
 
 ---
 
