@@ -2,6 +2,8 @@
 Proyecto para la materia **Sistemas Embebidos**  
 Autor: **Miguel Ángel Cleves Bolívar**
 
+La Estación Ambiental Interior es un proyecto orientado al diseño de un sistema embebido capaz de monitorear la calidad del aire en espacios cerrados mediante la tarjeta LicheeRV Nano. El sistema propone integrar sensores de CO₂, temperatura, humedad y material particulado, permitiendo obtener información confiable sobre las condiciones ambientales para favorecer entornos más seguros y saludables.
+
 ---
 
 ## Descripción del Proyecto
